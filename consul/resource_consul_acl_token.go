@@ -24,7 +24,7 @@ func resourceConsulACLToken() *schema.Resource {
 			"policies": {
 				Type:     schema.TypeSet,
 				Optional: true,
-				ForceNew: true,
+				ForceNew: false,
 				Elem: &schema.Schema{
 					Type: schema.TypeString,
 				},
